@@ -18,7 +18,7 @@ else:
     os.mkdir('Matoyunu')
     print("Veritabanı yolu başarıyla oluşturuldu!")
     time.sleep(1)
-db = sqlite3.connect("C:/Users/Erdem/Documents/Matoyunu/matoyunu.db")
+db = sqlite3.connect("C:/Users/"+path+"/Documents/Matoyunu/matoyunu.db")
 im = db.cursor()
 im.execute("CREATE TABLE IF NOT EXISTS kullanicilar (kullanici_adi, parola)")
 kullanicilar = [("root", "root")]
